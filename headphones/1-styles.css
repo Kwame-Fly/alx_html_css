@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*changed the 16px font size to 10px*/
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNav {
+    width: 100%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+    background-color: #071629;
+}
+
+.headerNav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav-logo .headerNav-image {
+    width: 16.1rem;
+    height: 3.2rem;
+}
+
+.headerNav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.headerNav-ul li {
+    list-style-type: none;
+}
+
+.headerNav-ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro' sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.headerNav .hamburger {
+    display: none;
+}
+
+.headerNav-ul li a:hover {
+    background-color: #FF6565;
+}
+
+.secondText .text3 {
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.secondPage {
+    background-color: #fff;
+    color: #000;
+    padding: 4rem;
+}
+
+.secondPage .secondPage-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 3rem;
+}
+
+.secondPage-texts .text-1 {
+    font-family: 'Source Sans Pro' sans-serif;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.secondPage-texts .text-2 {
+    font-family: 'Source Sans Pro' sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+
+}
+
+.secondPage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.secondPage-icons .icon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon1 .one {
+    font-family: 'Source Sans Pro';
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #071629;
+}
+
+.icon1 .two {
+    font-family: 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #071629;
+}
+
+@media (max-width: 480px) {
+    .headerNav-ul {
+        display: none;
+    }
+
+    .header{
+        background-repeat: no-repeat;
+    }
+
+    .headerNav {
+        width: 100%;
+        height: 3.5rem;
+        padding: 0;
+        justify-content: start;
+    }
+
+    .headerNav-logo {
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .headerNav .hamburger {
+        display: flex;
+        height: 1.5rem;
+        position: absolute;
+        right: 43rem;
+        top: 1rem;
+    }
+
+    .secondPage-icons {
+        flex-direction: column;
+        padding: 5rem 0;
+        gap: 6rem;
+    }
+
+    .secondPage .secondPage-texts {
+        padding: 5rem;
+        gap: 4rem;
+    }
+
+    .secondPage-texts .text-2 {
+        width: 37rem;
+        height: 33rem;
+        font-size: 2.2rem;
+        padding:0 2.5rem;
+    }
+}

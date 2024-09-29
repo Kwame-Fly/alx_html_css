@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*changed the 16px font size to 10px*/
+}
+
+body {
+    width: 100%;
+    background-color:#071629;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNav {
+    width: 100%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+}
+
+.headerNav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav-logo .headerNav-image {
+    width: 16.1rem;
+    height: 3.2rem;
+}
+
+.headerNav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.headerNav-ul li {
+    list-style-type: none;
+}
+
+.headerNav-ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro' sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.headerNav .hamburger {
+    display: none;
+}
+
+.headerNav-ul li a:hover {
+    background-color: #FF6565;
+}
+
+
+.thirdPage {
+    width: 100%;
+    background: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thirdPage-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 14.1rem;
+}
+
+.thirdPage-text h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.thirdPage-text p {
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.thirdPage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 7rem;
+}
+
+.thirdPage-icons .img {
+    width: 19rem;
+    height: 19rem;
+    position: relative;
+}
+
+.thirdPage-icons .iconz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdPage-icons .iconz h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.thirdPage-icons .iconz p {
+    font-family: 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.thirdPage-icons .iconz .inside {
+    padding: 4rem;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .header{
+        background-repeat: no-repeat;
+    }
+
+    .headerNav {
+        width: 100%;
+        height: 3.5rem;
+        padding: 0;
+        justify-content: start;
+    }
+
+    .headerNav-logo {
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+   .headerNav-ul {
+        display: none;
+    }
+
+    .headerNav .hamburger {
+        display: flex;
+        height: 1.5rem;
+        position: absolute;
+        right: 43rem;
+        top: 1rem;
+    }
+
+    .thirdPage-icons {
+        flex-direction: column;
+        padding: 7rem 0;
+    }
+
+    .thirdPage-text h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        width: 27rem;
+        height: 8rem;
+    }
+
+    .thirdPage-text p {
+        width: 31rem;
+        height: 21rem;
+        font-size: 2.1rem;
+    }
+}

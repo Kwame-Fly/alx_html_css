@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*changed the 16px font size to 10px*/
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.secondText .text3 {
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.secondPage {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+.secondPage-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 7rem;
+}
+
+.secondPage-texts .text-1 {
+    font-family: 'Source Sans Pro' sans-serif;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.secondPage-texts .text-2 {
+    font-family: 'Source Sans Pro' sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.secondPage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 7rem;
+}
+
+.secondPage-icons .icon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon1 {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.icon1:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.icon1 .one {
+    font-family: 'Source Sans Pro';
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #071629;
+}
+
+.icon1 .two {
+    font-family: 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #071629;
+}
+
+.thirdPage {
+    background: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    width: 100%;
+}
+
+.thirdPage-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 14.1rem;
+}
+
+.thirdPage-text h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.thirdPage-text p {
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.thirdPage-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 7rem;
+}
+
+.thirdPage-icons .img {
+    width: 19rem;
+    height: 19rem;
+    position: relative;
+}
+
+.thirdPage-icons .iconz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.iconz:hover {
+    transform: scale(1.5,1.5);
+    opacity: 0.9;
+}
+
+.thirdPage-icons .iconz h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.thirdPage-icons .iconz p {
+    font-family: 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.thirdPage-icons .iconz .inside {
+    padding: 4rem;
+    position: absolute;
+}
